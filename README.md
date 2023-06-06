@@ -40,10 +40,6 @@ I have gained valuable experience through these projects, which have enhanced my
 
 - Bachelor's Degree in Media Software, Sungkyul University (2018.03 - 2024.02)
 
-## Military Service
-
-- Completed mandatory military service in the Korean Armed Forces (2018.06 - 2020.02)
-
 ## Contact
 
 If you have any questions or would like to collaborate on a project, feel free to reach out to me:
