@@ -1,4 +1,4 @@
-# Hello, I'm Seokjin Hong 👋
+# Hello, I'm Seokjin Hong 👋 🇰🇷
 
 [![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github)](https://github.com/seokbangguri)
 [![Instagram](https://img.shields.io/badge/-Instagram-c13584?logo=instagram&logoColor=white)](https://www.instagram.com/seokbangguri)
