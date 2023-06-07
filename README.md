@@ -12,7 +12,6 @@ I'm a passionate full-stack developer currently studying in the Media Software D
 ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?logo=javascript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/-Node.js-green?logo=node.js&logoColor=white)
 ![React Native](https://img.shields.io/badge/-React_Native-blueviolet?logo=react&logoColor=white)
-![npm](https://img.shields.io/badge/-npm-CB3837?logo=npm&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?logo=typescript&logoColor=white)
 ![MySQL](https://img.shields.io/badge/-MySQL-blue?logo=mysql&logoColor=white)
 ![PHP](https://img.shields.io/badge/-PHP-purple?logo=php&logoColor=white)
