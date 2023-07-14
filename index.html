@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="홍석진 개인 홈페이지">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍석진 개인 홈페이지</title>
+    <script src="seok.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Seokjin's<br>Personal<br>Homepage</a></div>
+        <div class="menu">
+            <a href="#fpage">Home</a>
+            <a href="#spage">About</a>
+            <a href="#tpage">Portfolio</a>
+        </div>
+        <div class="copy">&copy; 2021. SEOKBANGGURI. All right reserved.</div>
+    </header>
+    <div class="topnav">
+        <a href="#fpage" class="active">Seokjin's personal Homepage</a>
+        <div id="myLinks">
+          <a href="#fpage">Home</a>
+          <a href="#spage">About</a>
+          <a href="#tpage">Portfolio</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="main" id="fpage">
+        <div id="mainname">
+            <span>Seokjin's</span>
+            <span> </span>
+            <span>Personal</span>
+            <span> </span>
+            <span>Homepage</span>
+        </div>
+    </div>
+    <div class="content" id="spage">
+        <div>
+            <p id="b">About</p>
+        </div>
+        <div class="introduce">
+            <div>
+                <p id="c">About</p>
+            </div>
+            <div class="face"><img src="/images/park.jpg" width="100%" height="100%"></div>
+            <div class="hi">
+                <p>Name : Seokjin Hong<br><br>Profile : Software developer<br><br>e-mail : seokbangguri@kakao.com<br><br>Phone : +82 10 2475 4024</p>
+            </div>
+        </div>
+    </div>
+    <div class="pt" id="tpage">
+        <div><p id="n">Portfolio</p></div>
+        <div class="ptbox">
+            <div class="firstp">
+                <div>
+                    <button class="ptb" id="myBtn"><img src="/images/Damda.jpg"></button>
+                    <p>"근현대사 미술관 담다"<br><br>Creating web site</p>
+                    <div id="myModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Production period: 2020/11/29 ~</p>
+                        <div id="mcon">
+                            <div>
+                                <img id="if" src="/images/Damda.jpg">
+                                <p>Mobile interface</p>
+                            </div>
+                            <div>
+                                <img  id="is" src="/images/DamdaPC.jpeg"><br>
+                                <p>PC interface</p>
+                            </div>
+                        </div>
+                        <button><a href="http://seokbangguri.github.io/Damda" target="_blank">Click to visit</a></button>
+                      </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="ptb" id="myBtn2"></button>
+                    <p>not yet</p>
+                    <div id="myModal2" class="modal2">
+                      <div class="modal-content2">
+                <span class="close2">&times;</span>
+                <p>It will update soon...</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="secondp">
+                <div>
+                    <button class="ptb" id="myBtn3"></button>
+                    <p>not yet</p>
+                    <div id="myModal3" class="modal3">
+                      <div class="modal-content3">
+                        <span class="close3">&times;</span>
+                        <p>Some text in the Modal..</p>
+                      </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="ptb" id="myBtn4"></button>
+                    <p>not yet</p>
+                    <div id="myModal4" class="modal4">
+                      <div class="modal-content4">
+                            <span class="close4">&times;</span>
+                            <p>Some text in the Modal..</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="co">&copy; 2021. SEOKBANGGURI. All right reserved.</div>
+        </div>
+    </div>
+</body>
+</html>
