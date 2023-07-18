@@ -59,10 +59,9 @@ $(document).ready(function () {
 
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop();
-  
+
     $('section').each(function() {
       var section = $(this);
-      var sectionId = section.attr("id");
       var sectionOffset = section.offset().top;
       var sectionHeight = section.height();
       var subtitle = section.find("#subtitle");
@@ -70,6 +69,61 @@ $(document).ready(function () {
       if (scrollPos >= sectionOffset - sectionHeight && scrollPos <= sectionOffset + sectionHeight) {
         subtitle.addClass('active');
       }
+
     });
   });
+
+  $(document).on('touchstart', '.section', function(e) {
+    e.preventDefault();
+    // 터치 이벤트 처리 로직 작성
+  });
+  
+  var sections = $('section:not(#blank)');
+  var currentSection = 0;
+  var isScrolling = false;
+
+  $(window).on('scroll', function () {
+    if (isScrolling) return;
+
+    var windowHeight = $(window).height();
+    var sectionBottom = sections.eq(currentSection).offset().top + sections.eq(currentSection).outerHeight();
+    var windowBottom = $(window).scrollTop() + windowHeight;
+
+    if (windowBottom >= sectionBottom) {
+      isScrolling = true;
+
+      if (currentSection < sections.length - 1) {
+        currentSection++;
+      } else {
+        // 마지막 섹션인 경우, 스크롤 이벤트를 무시하고 함수 종료
+        return;
+      }
+
+      $('html, body').stop().animate({
+        scrollTop: sections.eq(currentSection).offset().top -80
+      }, 800, function () {
+        isScrolling = false;
+      });
+    }
+  });
+
+  
+  // 마우스 포인터 효과를 생성하는 스크립트
+  $(document).on('mousemove', function(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+
+    $('.pointer-effect').css({
+      top: y + 'px',
+      left: x + 'px'
+    });
+  });
+  // a,button 태그에 마우스 포인터 이미지 변경
+  $('a,button').hover(function() {
+    $('.pointer-effect-inner').css('background-color', '#5dc6ff80');
+  }, function() {
+    $('.pointer-effect-inner').css('background-color', 'rgba(0, 0, 0, 0.700)');
+  });
+
+
 });
