@@ -22,7 +22,23 @@ header {
   justify-content: center;
   align-items: center;
   top: 0;
-  z-index: 2;
+  z-index: 3;
+}
+
+.blur {
+  display: none;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #52525290;
+  position: fixed;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+}
+
+.blur.active {
+  display: block;
+  opacity: 1;
 }
 
 .hamburger {
@@ -100,11 +116,11 @@ header {
 .bacon {
   border: 2px solid red;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   height: 100vh;
   width: 40vw;
   right: -40vw;
-  background-color: #000;
+  background-color: #00000090;
   transition: opacity 0.5s ease, right 0.5s ease;
 }
 .bacon.active {
@@ -181,7 +197,41 @@ header {
   color: #5dc6ff
 }
 
-#profile{
+.pbox {
+  display: flex;
+}
+
+.profile-image {
+  width: 30%;
+}
+.profile-image img {
+  width: 100%;
+}
+
+.profile-content {
+  width: 70%;
+  margin-left: 10px;
+}
+.profile-title {
+  font-size: 25px;
+}
+.profile-content .frame {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.col-4 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin: auto;
 }
 
 #projects{
@@ -195,7 +245,7 @@ header {
 #blank {
   padding: 0;
   margin: 0;
-  height: 7rem;
+  height: 80px;
   background-color: #f1f1f1;
 }
 
@@ -212,7 +262,7 @@ footer {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   left: 0;
   top: 0;
   width: 100%;

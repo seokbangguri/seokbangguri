@@ -1,23 +1,31 @@
 $(document).ready(function () {
 
   $('.hamburger').click(function(e) {
-    e.stopPropagation(); // 이벤트 전파 차단
-    var bacon = $('.bacon');
-    if (bacon.hasClass('active')) {
-      bacon.removeClass('active');
-    } else {
-      bacon.addClass('active');
+    if(obj.hambergur == false) {
+      $('.bacon').addClass('active');
+      $('.blur').addClass('active');
+      obj.hambergur = true;
+    }
+    else {
+      $('.bacon').removeClass('active');
+      $('.blur').removeClass('active');
+      obj.hambergur = false;
     }
   });
 
-  $(document).mouseup(function(e) {
-  
-    // 다른 부위를 클릭한 경우에만 'active' 클래스 제거
-    if (!$('.bacon').is(e.target) && $('.bacon').has(e.target).length === 0) {
-      $('.bacon').removeClass('active');
-    }
+  $('.blur').on('click', function() {
+    $('.bacon').removeClass('active');
+    $('.blur').removeClass('active');
+    obj.hambergur = false;
   });
   
+  $('.ketchup li a').on('click', function() {
+    $('.bacon').removeClass('active');
+    $('.blur').removeClass('active');
+    obj.hambergur = false;
+  })
+
+
   // 클릭 이벤트 처리
   $("#clickButton").click(function (event) {
     event.preventDefault();
@@ -38,7 +46,7 @@ $(document).ready(function () {
 
 
   // 네비게이션 메뉴 클릭 시 스크롤 이벤트 처리
-  $('#nav ul li a, #title a, .ketchup li a').on('click', function (event) {
+  $('#nav ul li a, #main a, .ketchup li a').on('click', function (event) {
     event.preventDefault();
 
     var target = $(this.hash);

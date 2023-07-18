@@ -10,6 +10,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="./static/js/script.js"></script>
+  <script src="./static/js/obj.js"></script>
   <style>
     /* CSS 스타일은 동일하게 유지합니다. */
     /* ... */
@@ -38,6 +39,7 @@
       </div>
     </div>
   </header>
+  <div class="blur"></div>
   <div class="bacon">
     <ul class="ketchup">
       <li><a href="#profile">- Profile</a></li>
@@ -52,8 +54,43 @@
       <p>Profile</p>
     </div>
     <div id="box" class="pbox">
-      <div style="height: 100px;">asdf</div>
-      <div>asdf</div>
+      <div class="profile-image"><img src="./static/images/profile.png" alt="profile-image"></div>
+      <div class="profile-content">
+        <div class="row profile-title">
+          <p>열정적인 풀스택 개발자<br><br>저는 다양한 웹 개발 기술에 대한 탄탄한 기반을 가지고 있으며 사용자 친화적인 서비스를 구축하는 개발자입니다.</p>
+        </div>
+        <div class="row frame">
+          <div class="col-4">
+            <img class="icon" src="./static/images/icons/User.png" alt="">
+            <div>
+              <span>이름</span>
+              <span>홍석진</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <img class="icon" src="./static/images/icons/calendar.png" alt="">
+            <div>
+              <span>생년월일</span>
+              <span>1999.07.15</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <img class="icon" src="./static/images/icons/location.png" alt="">
+            <div>
+              <span>주소</span>
+              <span>성남시 분당구</span>
+            </div>
+          </div>
+        </div>
+        <div class="row frame">
+          <div class="col-12">
+            <img src="./static/images/icons/career-promotion.png" alt="" class="icon">
+            <div>
+              <span>성장과정</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <br>
   </section>
