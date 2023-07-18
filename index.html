@@ -1,122 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="홍석진 개인 홈페이지">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홍석진 개인 홈페이지</title>
-    <script src="seok.js" defer></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홍석진 · Seokjin Hong · Web Fullstack Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./static/js/script.js"></script>
+  <script src="./static/js/obj.js"></script>
+  <style>
+    /* CSS 스타일은 동일하게 유지합니다. */
+    /* ... */
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo"><a href="index.html">Seokjin's<br>Personal<br>Homepage</a></div>
-        <div class="menu">
-            <a href="#fpage">Home</a>
-            <a href="#spage">About</a>
-            <a href="#tpage">Portfolio</a>
-        </div>
-        <div class="copy">&copy; 2021. SEOKBANGGURI. All right reserved.</div>
-    </header>
-    <div class="topnav">
-        <a href="#fpage" class="active">Seokjin's personal Homepage</a>
-        <div id="myLinks">
-          <a href="#fpage">Home</a>
-          <a href="#spage">About</a>
-          <a href="#tpage">Portfolio</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+  <div class="pointer-effect">
+    <div class="pointer-effect-inner"></div>
+  </div>
+  <header>
+    <div id="top">
+      <div id="main">
+        <a href="#blank">
+          <p id="title">Seokjin Hong</p>
+          <p id="sub">Web Fullstack Developer</p>
         </a>
-    </div>
-    <div class="main" id="fpage">
-        <div id="mainname">
-            <span>Seokjin's</span>
-            <span> </span>
-            <span>Personal</span>
-            <span> </span>
-            <span>Homepage</span>
+      </div>
+      <div id="nav">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
+        <ul class="menu">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="content" id="spage">
-        <div>
-            <p id="b">About</p>
+  </header>
+  <div class="blur"></div>
+  <div class="bacon">
+    <ul class="ketchup">
+      <li><a href="#profile">- Profile</a></li>
+      <li><a href="#projects">- Projects</a></li>
+      <li><a href="#contact">- Contact</a></li>
+    </ul>
+  </div>
+  
+  <section id="blank"></section>
+  <section id="profile">
+    <div id="subtitle" class="active">
+      <p>Profile</p>
+    </div>
+    <div id="box" class="pbox">
+      <div class="profile-image"><img src="./static/images/profile.png" alt="profile-image"></div>
+      <div class="profile-content">
+        <div class="row profile-title">
+          <p>열정적인 풀스택 개발자<br><br>저는 다양한 웹 개발 기술에 대한 탄탄한 기반을 가지고 있으며 사용자 친화적인 서비스를 구축하는 개발자입니다.</p>
         </div>
-        <div class="introduce">
+        <div class="row frame">
+          <div class="col-4">
+            <img class="icon" src="./static/images/icons/User.png" alt="">
             <div>
-                <p id="c">About</p>
+              <span>이름</span><br>
+              <span>홍석진</span>
             </div>
-            <div class="face"><img src="/images/park.jpg" width="100%" height="100%"></div>
-            <div class="hi">
-                <p>Name : Seokjin Hong<br><br>Profile : Software developer<br><br>e-mail : seokbangguri@kakao.com<br><br>Phone : +82 10 2475 4024</p>
+          </div>
+          <div class="col-4">
+            <img class="icon" src="./static/images/icons/calendar.png" alt="">
+            <div>
+              <span>생년월일</span><br>
+              <span>1999.07.15</span>
             </div>
+          </div>
+          <div class="col-4">
+            <img class="icon" src="./static/images/icons/location.png" alt="">
+            <div>
+              <span>주소</span><br>
+              <span>성남시 분당구</span>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="pt" id="tpage">
-        <div><p id="n">Portfolio</p></div>
-        <div class="ptbox">
-            <div class="firstp">
-                <div>
-                    <button class="ptb" id="myBtn"><img src="/images/Damda.jpg"></button>
-                    <p>"근현대사 미술관 담다"<br><br>Creating web site</p>
-                    <div id="myModal" class="modal">
-                      <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p>Production period: 2020/11/29 ~</p>
-                        <div id="mcon">
-                            <div>
-                                <img id="if" src="/images/Damda.jpg">
-                                <p>Mobile interface</p>
-                            </div>
-                            <div>
-                                <img  id="is" src="/images/DamdaPC.jpeg"><br>
-                                <p>PC interface</p>
-                            </div>
-                        </div>
-                        <button><a href="http://seokbangguri.github.io/Damda" target="_blank">Click to visit</a></button>
-                      </div>
-                    </div>
-                </div>
-                <div>
-                    <button class="ptb" id="myBtn2"></button>
-                    <p>not yet</p>
-                    <div id="myModal2" class="modal2">
-                      <div class="modal-content2">
-                <span class="close2">&times;</span>
-                <p>It will update soon...</p>
-                      </div>
-                    </div>
-                </div>
+        <div class="row frame">
+          <div class="col-12">
+            <img src="./static/images/icons/career-promotion.png" alt="" class="icon">
+            <div>
+              <span>성장과정</span>
             </div>
-            <div class="secondp">
-                <div>
-                    <button class="ptb" id="myBtn3"></button>
-                    <p>not yet</p>
-                    <div id="myModal3" class="modal3">
-                      <div class="modal-content3">
-                        <span class="close3">&times;</span>
-                        <p>Some text in the Modal..</p>
-                      </div>
-                    </div>
-                </div>
-                <div>
-                    <button class="ptb" id="myBtn4"></button>
-                    <p>not yet</p>
-                    <div id="myModal4" class="modal4">
-                      <div class="modal-content4">
-                            <span class="close4">&times;</span>
-                            <p>Some text in the Modal..</p>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="co">&copy; 2021. SEOKBANGGURI. All right reserved.</div>
+          </div>
         </div>
+      </div>
     </div>
+    <br>
+  </section>
+  
+  <section id="projects">
+    <div id="subtitle">
+      <p>Projects</p>
+    </div>
+    <div id="box">
+    <ul>
+      <li>
+        <h3>프로젝트 1</h3>
+        <p>프로젝트 1에 대한 간단한 설명입니다.</p>
+      </li>
+      <li>
+        <h3>프로젝트 2</h3>
+        <p>프로젝트 2에 대한 간단한 설명입니다.</p>
+      </li>
+    </ul>
+    <button id="openModalButton">모달 열기</button>
+    </div>
+    <br>
+  </section>
+  
+  <section id="contact">
+    <div id="subtitle">
+      <p>Contact</p>
+    </div>
+    <div id="box">
+      <div class="social-icons">
+        <a href="mailto:seokbangguri@kakao.com" target="_blank"><i class="fa-regular fa-envelope"></i> E-mail</a><br><br>
+        <a href="https://github.com/seokbangguri" target="_blank"><i class="fab fa-github"></i> Github</a><br><br>
+        <a href="https://www.instagram.com/seokbangguri" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+    <div style="justify-content: center; align-items: center; text-align: center; margin-top: 80px;">
+      <h1>제 홈페이지를 봐주셔서 감사합니다!</h1>
+    </div>
+    <br>
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 Seokjin Hong.<br>All rights reserved.</p>
+  </footer>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModalButton" class="close">&times;</span>
+      <h3>모달</h3>
+      <p>모달 내용입니다.</p>
+    </div>
+  </div>
 </body>
 </html>
