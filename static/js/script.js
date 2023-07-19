@@ -69,14 +69,12 @@ $(document).ready(function () {
       if (scrollPos >= sectionOffset - sectionHeight && scrollPos <= sectionOffset + sectionHeight) {
         subtitle.addClass('active');
       }
+      console.log(scrollPos);
+      console.log(sectionOffset + sectionHeight);
 
     });
   });
 
-  $(document).on('touchstart', '.section', function(e) {
-    e.preventDefault();
-    // 터치 이벤트 처리 로직 작성
-  });
   
   var sections = $('section:not(#blank)');
   var currentSection = 0;
@@ -94,16 +92,12 @@ $(document).ready(function () {
 
       if (currentSection < sections.length - 1) {
         currentSection++;
-      } else {
-        // 마지막 섹션인 경우, 스크롤 이벤트를 무시하고 함수 종료
-        return;
-      }
-
-      $('html, body').stop().animate({
+        $('html, body').stop().animate({
         scrollTop: sections.eq(currentSection).offset().top -80
       }, 800, function () {
         isScrolling = false;
       });
+      }
     }
   });
 
@@ -120,7 +114,7 @@ $(document).ready(function () {
   });
   // a,button 태그에 마우스 포인터 이미지 변경
   $('a,button').hover(function() {
-    $('.pointer-effect-inner').css('background-color', '#5dc6ff80');
+    $('.pointer-effect-inner').css('background-color', '#e1e1e1');
   }, function() {
     $('.pointer-effect-inner').css('background-color', 'rgba(0, 0, 0, 0.700)');
   });
