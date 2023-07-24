@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Administrator Page</title>
+</head>
+<body>
+  <h1>파일 및 데이터베이스 관리 페이지</h1>
+
+  <!-- 파일 업로드 폼 -->
+  <h2>파일 업로드</h2>
+  <form action="../php/upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="업로드" name="submit">
+  </form>
+
+  <!-- 파일 리스트 -->
+  <h2>파일 리스트</h2>
+  <?php
+  // 파일 목록을 가져오기 위한 PHP 코드
+  $files = scandir('/var/www/html/p');
+  foreach ($files as $file) {
+    if ($file != "." && $file != "..") {
+      echo "<p><a href='/p/$file'>$file</a></p>";
+    }
+  }
+  ?>
+
+  <!-- 데이터베이스 연결 및 조회 -->
+  <?php
+  $servername = "localhost";
+  $username = "your_username"; // 실제 사용자명으로 변경
+  $password = "your_password"; // 실제 비밀번호로 변경
+  $dbname = "your_database"; // 실제 데이터베이스명으로 변경
+
+  // 데이터베이스 연결
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  if ($conn->connect_error) {
+    die("연결 실패: " . $conn->connect_error);
+  }
+
+  // 데이터베이스에서 데이터 조회
+  $sql = "SELECT * FROM your_table"; // 실제 테이블명으로 변경
+  $result = $conn->query($sql);
+
+  // 조회 결과 출력
+  if ($result->num_rows > 0) {
+    echo "<h2>데이터베이스 조회 결과</h2>";
+    while ($row = $result->fetch_assoc()) {
+      echo "<p>" . $row['column1'] . " - " . $row['column2'] . "</p>"; // 실제 열(column) 이름으로 변경
+    }
+  } else {
+    echo "데이터 없음.";
+  }
+
+  // 연결 종료
+  $conn->close();
+  ?>
+</body>
+</html>

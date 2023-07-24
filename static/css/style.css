@@ -212,17 +212,26 @@ section {
 
 .pbox {
   display: flex;
+  align-items: center;
 }
 
 .profile-image {
   width: 30%;
+  height: 30%;
   display: flex;
   align-items: center;
 }
 .profile-image img {
   width: 100%;
-  border-radius: 50%;
-  background-color: #e1e1e1;
+  height: 100%;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.5s, background-color 0.3s;
+}
+.profile-image img:hover {
+  background-color: #00000020;
+  transform: scale(1.05);
 }
 
 .profile-content {
@@ -233,6 +242,15 @@ section {
   font-size: 25px;
   padding: 15px;
 }
+.profile-title p {
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.5s, background-color 0.3s;
+}
+.profile-title p:hover {
+  transform: scale(1.05);
+  background-color: #00000020;
+}
 .profile-content .frame {
   margin-top: 50px;
   text-align: center;
@@ -241,13 +259,13 @@ section {
 }
 
 .growth {
-  transition: bacground-color 0.3s, transform 0.5s;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.5s;
   padding: 20px;
 }
 .growth:hover {
   background-color: #00000020;
-  border-radius: 20px;
-  transform: scale(1.1);
+  transform: scale(1.05);
 
 }
 
@@ -260,7 +278,8 @@ section {
 
 .col-4 {
   padding: 10px;
-  transition: bacground-color 0.3s, transform 0.5s;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.5s;
 }
 
 .col-12 {
@@ -270,7 +289,6 @@ section {
 
 .col-4:hover {
   background-color: #00000020;
-  border-radius: 20px;
   transform: scale(1.1);
 }
 
@@ -329,11 +347,12 @@ footer {
 
 .modal-content {
   background-color: #fff;
-  margin: 10% auto;
+  margin: 30px auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 500px;
+  height: 90%;
+  max-width: 1000px;
 }
 
 .close {
@@ -412,6 +431,16 @@ footer {
     margin-bottom: 30px;
     font-size: 20px;
     text-align: left;
+  }
+  .profile-image img:hover {
+    background-color: #00000000;
+    border-radius: 20px;
+    transform: scale(1);
+  }
+  .profile-content p:hover {
+    background-color: #00000000;
+    border-radius: 20px;
+    transform: scale(1);
   }
   .col-4:hover {
     background-color: #00000000;

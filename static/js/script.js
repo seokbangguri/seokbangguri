@@ -119,5 +119,9 @@ $(document).ready(function () {
     $('.pointer-effect-inner').css('background-color', 'rgba(0, 0, 0, 0.700)');
   });
 
+  $('footer').on('click', function(){
+    console.log('gang');
+    window.location.href = '/static/pages/login.html';
+  })
 
 });
