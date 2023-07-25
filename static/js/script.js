@@ -121,7 +121,7 @@ $(document).ready(function () {
 
   $('footer').on('click', function(){
     console.log('gang');
-    window.location.href = '/static/pages/login.html';
+    window.location.href = './static/pages/login.html';
   })
 
 });
