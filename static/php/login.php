@@ -3,9 +3,9 @@ session_start(); // 세션 시작
 
 // 데이터베이스 연결 정보
 $servername = "localhost";
-$username = "your_username"; // 실제 사용자명으로 변경
-$password = "your_password"; // 실제 비밀번호로 변경
-$dbname = "your_database"; // 실제 데이터베이스명으로 변경
+$username = "seokbangguri"; // 실제 사용자명으로 변경
+$password = "fakepassword"; // 실제 비밀번호로 변경
+$dbname = "fakedatabase"; // 실제 데이터베이스명으로 변경
 
 // POST 데이터로부터 입력받은 사용자명과 비밀번호 가져오기
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($result->num_rows > 0) {
     // 로그인 성공
     $_SESSION["username"] = $user; // 세션에 사용자명 저장
+    header("Location: ./administrator.php");
     echo "로그인 성공!";
   } else {
     // 로그인 실패

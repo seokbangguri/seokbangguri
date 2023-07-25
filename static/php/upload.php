@@ -1,6 +1,7 @@
 <?php
 $targetDir = "/var/www/html/p/";
-$targetFile = $targetDir . basename($_FILES["fileToUpload"]["name"]);
+$targetFile = $targetDir . mb_convert_encoding($_FILES["fileToUpload"]["name"], "UTF-8", "auto");
+
 
 // 파일 업로드
 if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile)) {

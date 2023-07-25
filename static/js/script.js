@@ -69,9 +69,6 @@ $(document).ready(function () {
       if (scrollPos >= sectionOffset - sectionHeight && scrollPos <= sectionOffset + sectionHeight) {
         subtitle.addClass('active');
       }
-      console.log(scrollPos);
-      console.log(sectionOffset + sectionHeight);
-
     });
   });
 
