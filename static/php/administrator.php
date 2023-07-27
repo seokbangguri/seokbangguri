@@ -47,14 +47,63 @@
   // 조회 결과 출력
   if ($result->num_rows > 0) {
     echo "<h2>데이터베이스 조회 결과</h2>";
-    echo "<table><thead><tr><th>프로젝트명</th><th>요약</th><th>내용</th><th>기술</th></tr></thead><tb    ody>";
+    echo "<table><thead><tr><th>프로젝트명</th><th>요약</th><th>내용</th><th>기술</th><th>동작</th></tr></thead><tbody>";
     while ($row = $result->fetch_assoc()) {
-      echo "<tr><td>" . $row['project_name'] . "</td><td>" . $row['short_description'] . "</td><td>" .$row['    detailed_description'] . "</td><td>" . $row['technologies'] . "</td></tr>"; // 실제 열(column) 이름으로 변경
+      echo "<tr>";
+      echo "<td>" . $row['project_name'] . "</td>";
+      echo "<td>" . $row['short_description'] . "</td>";
+      echo "<td>" . $row['detailed_description'] . "</td>";
+      echo "<td>" . $row['technologies'] . "</td>";
+      echo "<td>";
+      echo "<form action='./delete.php' method='post'>";
+      echo "<input type='hidden' name='project_name_delete' value='" . $row['project_name'] . "'>";
+      echo "<input type='submit' name='delete' value='삭제'>";
+      echo "</form>";
+      echo "<form action='./update.php' method='post'>";
+      echo "<input type='hidden' name='project_name_update' value='" . $row['project_name'] . "'>";
+      echo "<input type='submit' name='update' value='수정'>";
+      echo "</form>";
+      echo "</td>";
+      echo "</tr>";
     }
     echo "</tbody></table>";
   } else {
     echo "데이터 없음.";
   }
+
+  <!-- 삭제 폼: 프로젝트명을 선택한 칼럼으로 삭제 -->
+  <form action="./delete.php" method="post">
+    <label for="project_name_delete">프로젝트명:</label>
+    <select name="project_name_delete" id="project_name_delete" required>
+      <?php
+      // 데이터베이스에서 프로젝트명 조회
+      $sql = "SELECT project_name FROM projects";
+      $result = $conn->query($sql);
+      while ($row = $result->fetch_assoc()) {
+        echo "<option value='" . $row['project_name'] . "'>" . $row['project_name'] . "</option>";
+      }
+      ?>
+    </select>
+    <!-- 삭제 버튼: 데이터베이스의 데이터 삭제 -->
+    <input type="submit" name="delete" value="삭제">
+  </form>
+
+  <!-- 수정 폼: 프로젝트명을 선택한 칼럼으로 수정 -->
+  <form action="./update.php" method="post">
+    <label for="project_name_update">프로젝트명:</label>
+    <select name="project_name_update" id="project_name_update" required>
+      <?php
+      // 데이터베이스에서 프로젝트명 조회
+      $sql = "SELECT project_name FROM projects";
+      $result = $conn->query($sql);
+      while ($row = $result->fetch_assoc()) {
+        echo "<option value='" . $row['project_name'] . "'>" . $row['project_name'] . "</option>";
+      }
+      ?>
+    </select>
+    <!-- 수정 버튼: 데이터베이스의 데이터 수정 -->
+    <input type="submit" name="update" value="수정">
+  </form>
  
 
   // 연결 종료
