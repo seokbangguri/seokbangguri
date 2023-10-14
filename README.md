@@ -19,8 +19,6 @@ I'm a passionate full-stack developer currently doing internship in GOQBA techno
 ![Google Cloud](https://img.shields.io/badge/-Google%20Cloud-4285F4?logo=google-cloud&logoColor=black&style=for-the-badge)
 ![Ubuntu](https://img.shields.io/badge/-Ubuntu-E95420?logo=ubuntu&logoColor=black&style=for-the-badge)
 
-
-
 ## Projects
 
 Here are some of the projects I have worked on:
@@ -45,8 +43,6 @@ If you have any questions or would like to collaborate on a project, feel free t
 
 - Email: seokbangguri@kakao.com
 - GitHub: https://github.com/seokbangguri
-
-- [![seokbangguri github stats](https://github-readme-stats.vercel.app/api?username=seokbangguri)](https://github.com/anuraghazra/github-readme-stats)
 
 I am always eager to learn and grow as a developer, and I look forward to contributing to innovative projects in the future.
 
