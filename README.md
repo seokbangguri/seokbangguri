@@ -7,17 +7,17 @@ I'm a passionate full-stack developer currently doing internship in GOQBA techno
 
 ## Skills
 
-![HTML](https://img.shields.io/badge/-HTML-orange?logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/-CSS-blue?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?logo=javascript&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-blue?logo=typescript&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-green?logo=node.js&logoColor=white)
-![MySQL](https://img.shields.io/badge/-MySQL-blue?logo=mysql&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/-Google%20Cloud-4285F4?logo=google-cloud&logoColor=white)
-![Ubuntu](https://img.shields.io/badge/-Ubuntu-E95420?logo=ubuntu&logoColor=white)
+![HTML](https://img.shields.io/badge/-HTML-orange?logo=html5&logoColor=black&style=for-the-badge)
+![CSS](https://img.shields.io/badge/-CSS-blue?logo=css3&logoColor=black&style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?logo=javascript&logoColor=black&style=for-the-badge)
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/-TypeScript-blue?logo=typescript&logoColor=black&style=for-the-badge)
+![Node.js](https://img.shields.io/badge/-Node.js-green?logo=node.js&logoColor=black&style=for-the-badge)
+![MySQL](https://img.shields.io/badge/-MySQL-blue?logo=mysql&logoColor=black&style=for-the-badge)
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=black&style=for-the-badge)
+![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=black&style=for-the-badge)
+![Google Cloud](https://img.shields.io/badge/-Google%20Cloud-4285F4?logo=google-cloud&logoColor=black&style=for-the-badge)
+![Ubuntu](https://img.shields.io/badge/-Ubuntu-E95420?logo=ubuntu&logoColor=black&style=for-the-badge)
 
 
 
