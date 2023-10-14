@@ -46,6 +46,8 @@ If you have any questions or would like to collaborate on a project, feel free t
 - Email: seokbangguri@kakao.com
 - GitHub: https://github.com/seokbangguri
 
+- [![seokbangguri github stats](https://github-readme-stats.vercel.app/api?username=seokbangguri)](https://github.com/anuraghazra/github-readme-stats)
+
 I am always eager to learn and grow as a developer, and I look forward to contributing to innovative projects in the future.
 
 Thank you for visiting my profile!
