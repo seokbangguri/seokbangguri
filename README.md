@@ -3,7 +3,7 @@
 [![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github)](https://github.com/seokbangguri)
 [![Instagram](https://img.shields.io/badge/-Instagram-c13584?logo=instagram&logoColor=white)](https://www.instagram.com/seokbangguri)
 
-I'm a passionate full-stack developer currently doing internship in GOQBA technology. I have a strong foundation in various web development technologies and enjoy building robust and user-friendly applications.
+I'm a passionate full-stack developer. I have a strong foundation in various web development technologies and enjoy building robust and user-friendly applications.
 
 ## Skills
 
