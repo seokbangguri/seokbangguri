@@ -35,7 +35,8 @@ I have gained valuable experience through these projects, which have enhanced my
 
 ## Education
 
-- Bachelor's Degree in Media Software, Sungkyul University (2018.03 - 2024.02)
+- Bachelor's Degree in Media Software (2018.03 - 2024.02)
+- SAMSUNG Software Academy For Youth (2024.06 ~ )
 
 ## Contact
 
