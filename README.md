@@ -29,7 +29,7 @@ Various information was processed to connect the back end and the front end.
 3. Dalbiji - It has become possible to understand and apply the object-oriented concept more deeply. 
 Object-oriented programming has many advantages, such as increased code readability and easier maintenance. In particular, when using dynamic languages such as JavaScript, applying object orientation increases the predictability of code and reduces bugs. Based on these advantages, it is possible to write more efficient and maintainable code while understanding and applying object orientation more deeply.
 4. Additional recruitment of labor human rights education by the Incheon Metropolitan Office of Education - A server was built using the Google Cloud platform, an additional recruitment website for applying for labor human rights education run by the Incheon Office of Education, and developed using node.js.
-5. Medical AI Scoring Platform - I'm currently developing a web platform that automatically scores multiple medical test answers.
+5. Medical AI Scoring Platform - Web platform that automatically scores multiple medical test answers.
 
 I have gained valuable experience through these projects, which have enhanced my skills in front-end and back-end development, database management, and API development.
 
