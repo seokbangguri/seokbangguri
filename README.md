@@ -9,15 +9,22 @@ I'm a passionate full-stack developer. I have a strong foundation in various web
 
 ![HTML](https://img.shields.io/badge/-HTML-orange?logo=html5&logoColor=black&style=for-the-badge)
 ![CSS](https://img.shields.io/badge/-CSS-blue?logo=css3&logoColor=black&style=for-the-badge)
-![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?logo=javascript&logoColor=black&style=for-the-badge)
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&style=for-the-badge)
-![TypeScript](https://img.shields.io/badge/-TypeScript-blue?logo=typescript&logoColor=black&style=for-the-badge)
+![VUE](https://img.shields.io/badge/Vue.js-4FC08D?logo=Vue.js&logoColor=white&style=for-the-badge)
+<br>
 ![Node.js](https://img.shields.io/badge/-Node.js-green?logo=node.js&logoColor=black&style=for-the-badge)
-![MySQL](https://img.shields.io/badge/-MySQL-blue?logo=mysql&logoColor=black&style=for-the-badge)
+![express.js](https://img.shields.io/badge/Express-000000?logo=Express&logoColor=white&style=for-the-badge)
+![Django](https://img.shields.io/badge/django-092E20?logo=django&logoColor=white&style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?logo=javascript&logoColor=black&style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/-TypeScript-blue?logo=typescript&logoColor=black&style=for-the-badge)
 ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=black&style=for-the-badge)
+<br>
 ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=black&style=for-the-badge)
-![Google Cloud](https://img.shields.io/badge/-Google%20Cloud-4285F4?logo=google-cloud&logoColor=black&style=for-the-badge)
+![MySQL](https://img.shields.io/badge/-MySQL-blue?logo=mysql&logoColor=black&style=for-the-badge)
 ![Ubuntu](https://img.shields.io/badge/-Ubuntu-E95420?logo=ubuntu&logoColor=black&style=for-the-badge)
+![Google Cloud](https://img.shields.io/badge/-Google%20Cloud-4285F4?logo=google-cloud&logoColor=black&style=for-the-badge)
+<br>
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seokbangguri&layout=compact)
 
 ## Projects
 
