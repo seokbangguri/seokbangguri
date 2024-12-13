@@ -42,8 +42,9 @@ I have gained valuable experience through these projects, which have enhanced my
 
 ## Education
 
-- Bachelor's Degree in Media Software (2018.03 - 2024.02)
-- SAMSUNG Software Academy For Youth (2024.06 ~ )
+- **Bachelor's Degree in Media Software** (2018.03 - 2024.02)
+- **Wisconsin State University Short-Term Exchange Program** (2021.05.01 - 2021.06.25)
+- **SAMSUNG Software Academy For Youth** (2024.06 ~ )
 
 ## Contact
 
@@ -55,3 +56,4 @@ If you have any questions or would like to collaborate on a project, feel free t
 I am always eager to learn and grow as a developer, and I look forward to contributing to innovative projects in the future.
 
 Thank you for visiting my profile!
+### [KOR Portfolio](https://quilt-collarbone-1b8.notion.site/150769d901b28088a37ac580898cf82b)
