@@ -1,5 +1,6 @@
 # Hello, I'm Seokjin Hong 👋 🇰🇷
 
+### [KOR Portfolio](https://quilt-collarbone-1b8.notion.site/150769d901b28088a37ac580898cf82b)
 [![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github)](https://github.com/seokbangguri)
 [![Instagram](https://img.shields.io/badge/-Instagram-c13584?logo=instagram&logoColor=white)](https://www.instagram.com/seokbangguri)
 
@@ -56,4 +57,3 @@ If you have any questions or would like to collaborate on a project, feel free t
 I am always eager to learn and grow as a developer, and I look forward to contributing to innovative projects in the future.
 
 Thank you for visiting my profile!
-### [KOR Portfolio](https://quilt-collarbone-1b8.notion.site/150769d901b28088a37ac580898cf82b)
